@@ -1,0 +1,297 @@
+body
+{
+    margin: 0%;
+    position: fixed;
+}
+
+.keresztezodes 
+{
+    background-image: url("kepek/grasstexture.jpg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 200px auto;
+    grid-template-rows: 40% 20% auto;
+}
+
+.ut 
+{
+    background: grey;
+}
+
+.forgalom 
+{
+    position: relative;
+}
+
+.lampa 
+{
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    background: black;
+    border-radius: 8px;
+    top: calc(40% - 100px);
+    left: calc(30% - 50px);
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.masodiklampa
+{
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    background: black;
+    border-radius: 8px;
+    top: calc(35% - 15px);
+    right: calc(51% - 8px);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.harmadiklampa
+{
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    background: black;
+    border-radius: 8px;
+    top: calc(61%);
+    left: calc(24% - 7px);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.negyediklampa
+{
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    background: black;
+    border-radius: 8px;
+    top: calc(61%);
+    right: calc(55% - 20px);
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.lampa div 
+{
+    border-radius: 9px;
+}
+
+.masodiklampa div
+{
+    border-radius: 9px;
+}
+
+.harmadiklampa div
+{
+    border-radius: 9px;
+}
+
+.negyediklampa div
+{
+    border-radius: 9px;
+}
+
+.fuggopiros
+{
+    background: rgb(137, 70, 70);
+    animation-name: pirosvalt;
+    animation-duration: 5s;
+}
+
+.fuggosarga 
+{
+    background: rgb(185, 165, 99);
+    animation-delay: 3s;
+    animation-name: sargavalt;
+    animation-duration: 3s;
+}
+
+.fuggozold 
+{
+    background: rgb(62, 79, 60);
+    animation-delay: 6s;
+    animation-name: zoldvalt;
+    animation-duration: 5s;
+}
+
+.vizpiros
+{
+    background: rgb(137, 70, 70);;
+    animation-delay: 5s;
+    animation-name: pirosvalt;
+    animation-duration: 5s;
+}
+
+.vizsarga
+{
+    background: rgb(185, 165, 99);
+    animation-delay: 9s;
+    animation-name: sargavalt;
+    animation-duration: 3s;
+}
+
+.vizzold
+{
+    background: rgb(62, 79, 60);
+    animation-name: zoldvalt;
+    animation-duration: 5s;
+}
+
+.auto img
+{
+    width: 100px;
+    position: fixed;
+    top: 51%;
+    left: 1%;
+    animation-name: animaciobalrol;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.masodikauto img
+{
+    width: 100px;
+    position: fixed;
+    top: 41%;
+    right: 1%;
+    animation-name: animaciojobbrol;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.harmadikauto img
+{
+    position: fixed;
+    width: 55px;
+    left: 38%;
+    bottom: 25%;
+    animation-name: animaciolentrol;
+    animation-delay: 6s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.negyedikauto img
+{
+    position: fixed;
+    width: 55px;
+    left: 31%;
+    top: 25%;
+    animation-name: animaciofentrol;
+    animation-delay: 6s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animaciobalrol
+{
+    from 
+    {
+        left: 1%;
+    }
+
+    to 
+    {
+        left: 100%;
+    }
+}
+
+@keyframes animaciojobbrol
+{
+    from 
+    {
+        right: 1%;
+    }
+
+    to 
+    {
+        right: 100%;
+    }
+}
+
+@keyframes animaciolentrol
+{
+    from
+    {
+        bottom: 25%;
+    }
+    to
+    {
+        bottom: 100%;
+    }
+}
+
+@keyframes animaciofentrol
+{
+    from 
+    {
+        top: 25%;
+    }
+
+    to 
+    {
+        top: 100%;
+    }
+}
+
+@keyframes pirosvalt
+{
+    from
+    {
+        background: red;
+    }
+    to
+    {
+        background: red;
+    }
+}
+
+@keyframes sargavalt
+{
+    from
+    {
+        background: yellow;
+    }
+    to
+    {
+        background: yellow;
+    }
+}
+
+@keyframes zoldvalt
+{
+    from
+    {
+        background: rgb(171, 255, 46);
+    }
+    to
+    {
+        background: rgb(171, 255, 46);
+    }
+}
